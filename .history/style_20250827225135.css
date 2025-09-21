@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+    --accent: #ff9a24;
+    --black: #131313;
+}
+
+body {
+    min-height: 100vh;
+}
+
+section {
+    min-width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Navbar Section */
+nav {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Added % */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Fixed typo: 'centre' → 'center' */
+    color: var(--black);
+    background-color: white;
+    padding: 30px 50px;
+    transition: all 0.4s ease-out;
+    filter: drop-shadow(5px 5px 10px transparent);
+}
+
+nav.sticky {
+    background-color: white;
+    filter: drop-shadow(5px 5px 10px #ffbe745e);
+}
+
+.brand {
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+    color: var(--black);
+}
+
+.brand h1 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.brand:hover {
+    /* Fixed typo: 'brand.hover' → 'brand:hover' */
+    opacity: 0.8;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    /* Fixed typo: 'centre' → 'center' */
+    align-items: center;
+    gap: 42px;
+}
+
+.menu a {
+    display: inline-block;
+    position: relative;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 32px;
+    background-color: white;
+    padding: 10px;
+    transition: all 0.2s ease-out;
+}
+
+.menu a:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
+.btn {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn-2 {
+    display: flex;
+    align-items: center;
+    /* Fixed typo: 'centre' → 'center' */
+    gap: 14px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--black);
+    transition: all ease-in-out 0.2s;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-2 i {
+    font-size: 32px;
+    transition: all 0.2s ease-out;
+}
+
+/* Fixed typo: '.btn2:hover i' → '.btn-2:hover i' */
+.btn-2:hover i {
+    color: var(--accent);
+}
+
+.btn-2:hover {
+    gap: 10px;
+}
+
+/* ----------------- Hero Section ----------------- */
+.heropage {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("img/hero-background-image.png");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+}
+
+.hero-headlines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 750px;
+    text-align: center;
+}
+
+.hero-headlines h1 {
+    font-size: 64px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.hero-headlines p {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: var(--black);
+}
+
+/* Hero Buttons */
+.hero-headlines-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-3 {
+    width: 205px;
+    height: 53px;
+    background-color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border-radius: 12px;
+    border: 1px solid var(--black);
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.btn-3:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* Transparent Button */
+.btn-transparent {
+    background-color: transparent;
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+
+.btn-transparent:hover {
+    background-color: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+/* Hero Images */
+.hero-images {
+    display: flex;
+    margin-top: 56px;
+    gap: 35px;
+}
+
+/* Requirements Section */
+.requirements {
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: url("img/requirements-background-img.png");
+}
+
+.requirements-headlines {
+    width: 658px;
+}
+
+.requirements-headlines h1 {
+    font-size: 96px;
+    font-weight: 900;
+}
+
+.requirements-headlines p {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 49px;
+}
+
+.r-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.r-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.r-logo {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--black);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.r-logo i {
+    font-size: 28px;
+}
+
+.r-item h5 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* Pets Section */
+.pets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 74px;
+}
+
+.pets-headlines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.pets-headlines i {
+    font-size: 56px;
+    color: #7291ff;
+}
+
+.pets-headlines h1 {
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.pets-collection {
+    display: flex;
+    gap: 28px;
+    margin-top: 74px;
+}
+
+.pet-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    transition: 0.5s ease-out;
+}
+
+.pet-item h3 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.btn-pets {
+    width: 269px;
+    height: 60px;
+    /* added px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 0px;
+    margin-top: 48px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 100px;
+    padding: 0 50px;
+
+    /* makes it responsive */
+}
+
+.about-headlines {
+    display: flex;
+    flex-direction: column;
+    width: 885px;
+}
+
+.about-headlines h1 {
+    font-size: 64px;
+    font-weight: 900;
+}
+
+.about-headlines p {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.about-info {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 76px;
+    margin-top: 40px;
+}
+
+.about-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-info-item h5 {
+    font-size: 36px;
+    font-weight: 800;
+    display: flex;
+}
+
+.about-info-item h6 {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+}
+
+.about-headlines button {
+    margin-top: 48px;
+}
+
+.about-headlines button:hover {
+    background-color: #5677e6;
+}
