@@ -3,3 +3,9 @@ scikit-learn
 joblib
 fastapi 
 pydantic
+fastapi
+uvicorn
+joblib
+scikit-learn
+pandas
+numpy
