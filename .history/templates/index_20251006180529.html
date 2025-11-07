@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/index.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+    <title>Purrfect | Pet Adoption</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html" class="brand">
+            <h1>Purr<b class="accent">fect</b></h1>
+        </a>
+
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn" aria-label="Close menu"></i>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="index.html#pets">Pets</a>
+            <a href="index.html#requirements">Requirements</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#prediction">Predict Adoption</a>
+        </div>
+
+        <button class="btn-2" onclick="window.location.href='contact.html'">
+            <p>Contact Us</p>
+            <i class="fa-solid fa-circle-arrow-right"></i>
+        </button>
+
+        <div class="btn">
+            <i class="fas fa-bars menu-btn" aria-label="Open menu"></i>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <section class="heropage">
+        <div class="hero-headlines">
+            <h1>Find Your Purrfect Pet Soul Today!</h1>
+            <p>Discover Your Perfect Companion in Our Selection of Loving Pets Available for Adoption.</p>
+            <div class="hero-headlines-buttons">
+                <button class="btn-3">Our Pets</button>
+                <button class="btn-3 btn-transparent">Contact Us</button>
+            </div>
+        </div>
+        <div class="hero-images">
+            </static /img src="img/hero-img-1.png" alt="img" />
+            </static /img src="img/hero-img-2.png" alt="img" />
+            </static /img src="img/hero-img-3.png" alt="img" />
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Requirements Section -->
+    <section class="requirements" id="requirements">
+        <div class="requirements-headlines">
+            <p>Our process is simple and filled with joy every step of the way</p>
+            <div class="r-item-container">
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #b9ff46">
+                        <i class="fa-regular fa-newspaper"></i>
+                    </div>
+                    <h5>Submitting an application</h5>
+                </div>
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #fff846">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h5>Attending a online interview</h5>
+                </div>
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #ff8846">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <h5>Meeting the pet in person</h5>
+                </div>
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #46c7ff">
+                        <i class="fa-regular fa-file-zipper"></i>
+                    </div>
+                    <h5>Signing an adoption agreement</h5>
+                </div>
+                <div class="r-item">
+                    <div class="r-logo" style="background-color: #4fffca">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h5>Congratulations on finding a match</h5>
+                </div>
+            </div>
+        </div>
+        <img src="/static/img/requirements-img.png" alt="img" />
+    </section>
+    <!-- Requirements Section End -->
+
+    <!-- Pets Section -->
+    <section class="pets" id="pets">
+        <div class="pets-headlines">
+            <i class="fa-solid fa-paw"></i>
+            <h1>Meet Your Soul Pets</h1>
+        </div>
+
+        <div class="pets-collection">
+            <div class="pet-item">
+                <img src="/static/img/pet-item-1.png" alt="Sir Woofs" />
+                <h3>Sir Woofs</h3>
+            </div>
+            <div class="pet-item">
+                </static /img src="img/pet-item-2.png" alt="Captain Squacks" />
+                <h3>Captain Squacks</h3>
+            </div>
+            <div class="pet-item">
+                </static /img src="img/pet-item-3.png" alt="Professor Meow" />
+                <h3>Professor Meow</h3>
+            </div>
+        </div>
+
+        <button class="btn-3 btn-pets">
+            <p>Find More</p>
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+    </section>
+    <!-- Pets Section End -->
+
+    <!-- Prediction Form Section -->
+    <!-- Prediction Form Section -->
+    <section class="prediction" id="prediction">
+        <div class="prediction-headlines">
+            <h2>Check Adoption Likelihood</h2>
+            <p>Enter details about a pet and predict if it’s likely to be adopted.</p>
+        </div>
+
+        <form onsubmit="predictAdoption(event)" class="prediction-form">
+            <label>Pet Type:
+                <select id="PetType" required>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label><br>
+
+            <label>Breed: <input id="Breed" type="text" required></label><br>
+
+            <label>Age (months): <input id="AgeMonths" type="number" min="0" required></label><br>
+
+            <label>Color: <input id="Color" type="text" required></label><br>
+
+            <label>Size:
+                <select id="Size" required>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select>
+            </label><br>
+
+            <label>Weight (kg): <input id="WeightKg" type="number" step="0.1" min="0" required></label><br>
+
+            <label>Vaccinated:
+                <select id="Vaccinated" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </label><br>
+
+            <label>Health Condition:
+                <select id="HealthCondition" required>
+                    <option value="Healthy">Healthy</option>
+                    <option value="Sick">Sick</option>
+                    <option value="Injured">Injured</option>
+                </select>
+            </label><br>
+
+            <label>Time in Shelter (days): <input id="TimeInShelterDays" type="number" min="0" required></label><br>
+
+            <label>Adoption Fee: <input id="AdoptionFee" type="number" min="0" step="0.01" required></label><br>
+
+            <label>Previous Owner:
+                <select id="PreviousOwner" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </label><br>
+
+            <button type="submit" class="btn-3">Predict</button>
+        </form>
+
+        <p id="result"></p>
+    </section>
+
+    <!-- Prediction Form Section End -->
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-headlines">
+            <h1>About Us</h1>
+            <p class="reveal-type" data-bg-color="#cccccc" data-fg-color="black">
+                Purrfect is not just a <b>pet adoption website</b>; it's a haven for both
+                pets in search of their forever homes and compassionate individuals ready
+                to welcome them with open arms.
+            </p>
+            <div class="about-info-container">
+                <div class="about-info-item">
+                    <h5>100+</h5>
+                    <h6>Saved Pets</h6>
+                </div>
+                <div class="about-info-item">
+                    <h5>100%</h5>
+                    <h6>Adoption Rate</h6>
+                </div>
+                <div class="about-info-item">
+                    <h5>5 Star</h5>
+                    <h6>Community Loved</h6>
+                </div>
+            </div>
+            <button class="btn-3">Get Started</button>
+        </div>
+
+        </static /img src="/static/img/about-img.png" alt="img" />
+    </section>
+    <!-- About Section End -->
+
+</body>
+
+</html>
