@@ -42,9 +42,11 @@
             <a href="#requirements">Requirements</a>
             <a href="#about">About</a>
             <a href="#prediction">Predict Adoption</a>
+            <!-- Removed the old menu Contact Us link -->
         </div>
 
-        <button class="btn-2" onclick="window.location.href='contact.html'">
+        <!-- Keep only this Contact Us button -->
+        <button class="btn-2" onclick="window.location.href='/contact'">
             <p>Contact Us</p>
             <i class="fa-solid fa-circle-arrow-right"></i>
         </button>
@@ -54,6 +56,7 @@
         </div>
     </nav>
     <!-- Navbar End -->
+
 
     <!-- Hero Section -->
     <section class="heropage" id="home">
@@ -243,6 +246,12 @@
         <img src="{{ url_for('static', path='img/about-img.png') }}" alt="About Image" />
     </section>
     <!-- About Section End -->
+    <!-- contact section start-->
+    <!-- Contact Section -->
+
+
+    <!-- contact section end-->
+
 
 </body>
 

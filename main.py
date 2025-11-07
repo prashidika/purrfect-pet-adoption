@@ -7,6 +7,7 @@ import joblib
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
+
 app = FastAPI()
 
 # Load model
@@ -46,6 +47,11 @@ def home(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
 # Prediction endpoint
+
+
+@app.get("/contact", response_class=HTMLResponse)
+def contact(request: Request):
+    return templates.TemplateResponse("contact.html", {"request": request})
 
 
 @app.post("/predict")

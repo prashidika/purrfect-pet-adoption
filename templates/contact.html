@@ -1,0 +1,56 @@
+<!-- templates/contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Purrfect</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar (you can copy your navbar here) -->
+    <nav>
+        <a href="index.html" class="brand">
+            <h1>Purr<b class="accent">fect</b></h1>
+        </a>
+        <div class="menu">
+            <div class="btn"><i class="fas fa-times close-btn"></i></div>
+            <a href="index.html">Home</a>
+            <a href="index.html#pets">Pets</a>
+            <a href="index.html#requirements">Requirements</a>
+            <a href="index.html#about">About</a>
+            <a href="contact.html">Contact Us</a> <!-- This opens this page -->
+        </div>
+        <div class="btn"><i class="fas fa-bars menu-btn"></i></div>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <h1>Get in Touch 💌 <i class="fa-solid fa-paw"></i></h1>
+
+        <!-- Decorative paw images -->
+        <img src="/static/img/paw1.png" class="paw-decoration paw1">
+        <img src="/static/img/paw2.png" class="paw-decoration paw2">
+
+        <form class="contact-form" onsubmit="alert('Message sent!')">
+            <label>Name:
+                <input type="text" placeholder="Your Name" required>
+            </label>
+            <label>Email:
+                <input type="email" placeholder="Your Email" required>
+            </label>
+            <label>Message:
+                <textarea placeholder="Your Message" required></textarea>
+            </label>
+            <button type="submit">Send Message <i class="fa-solid fa-paw"></i></button>
+        </form>
+    </section>
+
+</body>
+
+</html>
